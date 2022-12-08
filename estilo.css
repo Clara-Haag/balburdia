@@ -1,0 +1,32 @@
+* {padding: 0; margin: 0}
+
+
+@keyframes hoover{
+    from {text-decoration: none;}
+    to {text-decoration: underline;}
+}
+
+.navegacao {
+    height: 10%;
+}
+.navegacao nav {
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+}
+
+.navegacao a{
+    font-family: sans-serif;
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+
+    display: inline-block;
+    margin-left: 1%;
+}
+.navegacao a:hover{
+    color: white;
+    animation-name: hoover;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
