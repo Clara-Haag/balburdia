@@ -63,7 +63,7 @@
     0px 0px 1.5rem hsl(0deg 0% 20% / 0.30);
 }
 .banner h1{
-    font-size: 6em;
+    font-size: 6%;
     font-family:var(--fonte_secundaria);
     padding-left: 5%;
     display: inline;
