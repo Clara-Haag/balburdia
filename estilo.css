@@ -7,8 +7,8 @@
     --destaque: crimson;
 
     /* Váriaveis de fonte */
-    --fonte1: sans-serif;
-    --fonte2: times;
+    --fonte_principal: sans-serif;
+    --fonte_secundaria: times;
 }
 
 @keyframes hoover{
@@ -20,7 +20,7 @@
 /* Barra de Navegação */
 .navegacao{
     position: sticky;
-    top:0;
+    top: 0;
     height: fit-content;
     width: 100%;
 }
@@ -31,13 +31,13 @@
 }
 /* Estilização dos Links */
 .navegacao a{
-    font-family: var(--fonte1);
+    font-family: var(--fonte_principal);
     font-size: x-large;
     text-decoration: none;
     color: var(--base_branco);
     margin-left: 2%;
 }
-.navegacao a:hover, a:active{
+.navegacao a:hover{ /* animação dos links */
     animation-name: hoover;
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
@@ -45,30 +45,40 @@
 
 /* Banner INDEX.HTML */
 .banner{
+    /* ajuste do fundo */
     background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(imagens/fundo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
-    height: 50%;
     width: auto;
     color: var(--base_branco);
     padding: 3em;
     margin: 0;
+
+    box-shadow: /* sombra */
+    0px 0px 0.18rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 0.42rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 0.78rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 1.5rem hsl(0deg 0% 20% / 0.30);
 }
 .banner h1{
-    font-size: 5em;
-    font-family:var(--fonte2);
+    font-size: 6em;
+    font-family:var(--fonte_secundaria);
+    padding-left: 5%;
+    display: inline;
+    cursor: default;
+}
+.banner span{
+    font-size: 1.5em;
+    padding-left: 1%;
 }
 .banner p{
-    font-size: 2.5em;
+    font-size: 2em;
+    text-align: center;
 }
-.banner h1:hover{
+.banner h1:active{ /* animação do título */
     animation-name: hoover;
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
-}
-p{
-    font-size: xx-large;
-    text-align: center;
 }
