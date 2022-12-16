@@ -1,0 +1,83 @@
+* {padding: 0; margin: 0}
+
+:root{
+    /* Váriaveis de cores */
+    --base_branco: white;
+    --base_preto: black;
+    --destaque: crimson;
+
+    /* Váriaveis de fonte */
+    --fonte_principal: sans-serif;
+    --fonte_secundaria: times;
+
+    /* Váriaveis de tamanho de fonte */
+    --grande_pc: 3em;
+    --pequena_pc: 1.5em;
+    --grande_cell: 2em;
+    --pequena_cell: 1em;
+}
+
+@keyframes hoover{
+    /* Animação da Barra de Navegação */
+    from {}
+    to {color: var(--destaque);}
+}
+
+/* Barra de Navegação */
+.navegacao{
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    width: 100%;
+
+    box-shadow: /* sombra */
+    0px 0px 0.18rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 0.42rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 0.78rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 1.5rem hsl(0deg 0% 20% / 0.30);
+}
+.navegacao nav {
+    background-color: var(--base_preto);
+    display: flex;
+    align-items: center;
+}
+/* Estilização dos Links */
+.navegacao a{
+    font-family: var(--fonte_principal);
+    font-size: x-large;
+    text-decoration: none;
+    color: var(--base_branco);
+    margin-left: 2%;
+}
+.navegacao a:hover{ /* animação dos links */
+    animation-name: hoover;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+/* Estilização de conteúdo */
+.conteudo{
+    padding:3vw;
+    font-family: var(--fonte_principal);
+}
+.conteudo h1{
+    font-family: var(--fonte_secundaria);
+    text-align: center;
+}
+.capitular{
+    display: inline;
+    font-family: var(--fonte_secundaria);
+    color: var(--destaque);
+}
+
+/* Responsividade das fontes */
+@media screen and (max-width: 800px) {
+    .conteudo h1{ font-size: var(--grande_cell);}
+    .conteudo p{ font-size: var(--pequena_cell);}
+    .capitular{ font-size: 1.5em;}
+}
+@media screen and (min-width: 801px) {
+    .conteudo h1{ font-size: var(--grande_pc);}
+    .conteudo p{ font-size: var(--pequena_pc);}
+    .capitular{ font-size: 2em;}
+}

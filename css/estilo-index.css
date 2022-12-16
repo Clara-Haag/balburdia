@@ -1,0 +1,101 @@
+/* Estilização do banner*/
+.banner{
+    /* ajuste do fundo */
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(../imagens/fundo-cores.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: auto;
+    color: var(--base_branco);
+    padding: 3em;
+    margin: 0;
+}
+/* Outras configurações do texto */
+.banner h1{
+    font-family:var(--fonte_secundaria);
+    padding-left: 5%;
+    display: inline;
+    cursor: default;
+}
+.banner span{
+    padding-left: 1%;
+}
+.banner p{
+    text-align: center;
+}
+.banner h1:active{ /* animação do título */
+    animation-name: hoover;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+/* Estilização dos 10 mandamentos */
+.mandamentos{
+    background-color: var(--base_preto);
+    color: var(--base_branco);
+    padding: 3vw;
+    text-align: center;
+
+    box-shadow: /* sombra */
+    0px 0px 0.18rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 0.42rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 0.78rem hsl(0deg 0% 20% / 0.30),
+    0px 0px 1.5rem hsl(0deg 0% 20% / 0.30);
+}
+.mandamentos h1{
+    font-family: var(--fonte_secundaria);
+}
+.mandamentos ul{
+    display: inline-block;
+    text-align: left;
+    margin: 1vw;
+    list-style: none;
+    font-family: var(--fonte_principal);
+}
+
+/* Estilização quem somos */
+.quem-somos{
+    text-align: center;
+    padding: 1vw;
+}
+.quem-somos h1{
+    font-family: var(--fonte_secundaria);
+}
+.quem-somos p{
+    font-family: var(--fonte_principal);
+}
+.pessoa{
+    display: inline-block;
+    margin: 1vw;
+}
+.pessoa img{
+    height: 10em;
+    border-radius: 5em;
+}
+
+/* Responsividade das fontes */
+@media screen and (max-width: 800px) {
+    .banner h1{ font-size: 3em;}
+    .banner span{ font-size: 1.5em;}
+    .banner p{ font-size: 2em;}
+
+    .mandamentos h1{ font-size: var(--grande_cell);}
+    .mandamentos ul{ font-size: var(--pequena_cell);}
+
+    .quem-somos h1{ font-size: var(--grande_cell);}
+    .quem-somos p{ font-size: var(--pequena_cell);}
+    .pessoa h3{ font-size: 1.5em;}
+}
+@media screen and (min-width: 801px){
+    .banner h1{ font-size: 6em;}
+    .banner span{ font-size: 1.5em;}
+    .banner p{ font-size: 2em;}
+
+    .mandamentos h1{ font-size: var(--grande_pc);}
+    .mandamentos ul{ font-size: var(--pequena_pc);}
+
+    .quem-somos h1{ font-size: var(--grande_pc);}
+    .quem-somos p{ font-size: var(--pequena_pc);}
+    .pessoa h3{ font-size: 2.5em;}
+}
