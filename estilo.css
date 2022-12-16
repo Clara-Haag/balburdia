@@ -54,19 +54,20 @@
     padding-right: 3vw;
     padding-left: 3vw;
     padding-top: 1vw;
+    padding-bottom: 1vw;
 
     font-size: medium;
     font-family: var(--fonte_principal);
 }
 .conteudo h1{
     font-family: var(--fonte_secundaria);
-    font-size: 3vw;
+    font-size: 3em;
     text-align: center;
 }
 .capitular{
     display: inline;
     font-family: var(--fonte_secundaria);
-    font-size: xx-large;
+    font-size: 2em;
     color: var(--destaque);
 }
 
@@ -86,9 +87,9 @@
 }
 /* Responsividade da fonte */
 @media screen and (max-width: 800px) {
-    .banner h1{ font-size: 4vw;}
-    .banner span{ font-size: 1vw;}
-    .banner p{ font-size: 1.5vw;}
+    .banner h1{ font-size: 5vw;}
+    .banner span{ font-size: 1.5vw;}
+    .banner p{ font-size: 2vw;}
 }
 @media screen and (min-width: 801px){
     .banner h1{ font-size: 6vw;}
@@ -112,4 +113,24 @@
     animation-name: hoover;
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
+}
+
+/* Estilização dos 10 mandamentos */
+.mandamentos{
+    background-color: var(--base_preto);
+    color: var(--base_branco);
+    padding: 3vw;
+    text-align: center;
+}
+.mandamentos h1{
+    font-family: var(--fonte_secundaria);
+    font-size: 3em;
+}
+.mandamentos ul{
+    display: inline-block;
+    text-align: left;
+    margin: 1vw;
+    list-style: none;
+    font-family: var(--fonte_principal);
+    font-size: 2em;
 }
