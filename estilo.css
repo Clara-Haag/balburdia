@@ -62,19 +62,28 @@
     0px 0px 0.78rem hsl(0deg 0% 20% / 0.30),
     0px 0px 1.5rem hsl(0deg 0% 20% / 0.30);
 }
+/* Responsividade da fonte */
+@media screen and (max-width: 800px) {
+    .banner h1{ font-size: 3vw;}
+    .banner span{ font-size: 0.75vw;}
+    .banner p{ font-size: 1vw;}
+}
+@media screen and (min-width: 801px){
+    .banner h1{ font-size: 6vw;}
+    .banner span{ font-size: 1.5vw;}
+    .banner p{ font-size: 2vw;}
+}
+/* Outrs configurações do texto */
 .banner h1{
-    font-size: 6vw;
     font-family:var(--fonte_secundaria);
     padding-left: 5%;
     display: inline;
     cursor: default;
 }
 .banner span{
-    font-size: 1.5vw;
     padding-left: 1%;
 }
 .banner p{
-    font-size: 2vw;
     text-align: center;
 }
 .banner h1:active{ /* animação do título */
