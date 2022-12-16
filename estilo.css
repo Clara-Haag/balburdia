@@ -63,18 +63,18 @@
     0px 0px 1.5rem hsl(0deg 0% 20% / 0.30);
 }
 .banner h1{
-    font-size: 600%;
+    font-size: 6vw;
     font-family:var(--fonte_secundaria);
     padding-left: 5%;
     display: inline;
     cursor: default;
 }
 .banner span{
-    font-size: 1.5em;
+    font-size: 1.5vw;
     padding-left: 1%;
 }
 .banner p{
-    font-size: 2em;
+    font-size: 2vw;
     text-align: center;
 }
 .banner h1:active{ /* animação do título */
