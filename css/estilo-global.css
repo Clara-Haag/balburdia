@@ -22,6 +22,10 @@
     from {}
     to {color: var(--destaque);}
 }
+@keyframes botao{
+    from {}
+    to {fill: var(--base_preto)}
+}
 
 /* Barra de Navegação */
 .navegacao{
@@ -49,11 +53,6 @@
     color: var(--base_branco);
     margin-left: 2%;
 }
-.navegacao a:hover{ /* animação dos links */
-    animation-name: hoover;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-}
 
 /* Estilização de conteúdo */
 .conteudo{
@@ -68,6 +67,47 @@
     display: inline;
     font-family: var(--fonte_secundaria);
     color: var(--destaque);
+}
+
+/* Estilização do rodapé */
+.rodape{
+    background-color: var(--base_preto);
+    padding: 1vw;
+    font-family: var(--fonte_principal);
+    color: var(--base_branco);
+    height: fit-content;
+}
+.rodape p{
+    display: inline-block;
+}
+.rodape a{
+    text-decoration: none;
+    color: var(--base_branco);
+}
+.rodape button{
+    float: right;
+    display: inline;
+    background-color: var(--base_branco);
+    height: 3em;
+    border-radius: 1em;
+    margin-right: 1vw;
+    border: none;
+}
+.rodape button svg{
+    height: 3em;
+    width: 3em;
+    fill: var(--destaque)
+}
+.rodape button svg:hover{
+    animation-name: botao;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+a:hover{ /* animação dos links */
+    animation-name: hoover;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
 }
 
 /* Responsividade das fontes */
