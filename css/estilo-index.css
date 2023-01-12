@@ -77,7 +77,7 @@
 /* Responsividade das fontes */
 @media screen and (max-width: 800px) {
     .banner h1{ font-size: 3em;}
-    .banner span{ font-size: 1.5em;}
+    .banner span{ font-size: 1em;}
     .banner p{ font-size: 2em;}
 
     .mandamentos h1{ font-size: var(--grande_cell);}

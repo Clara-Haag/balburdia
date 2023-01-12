@@ -88,7 +88,6 @@
     float: right;
     display: inline;
     background-color: var(--base_branco);
-    height: 3em;
     border-radius: 1em;
     margin-right: 1vw;
     border: none;
@@ -115,6 +114,7 @@ a:hover{ /* animação dos links */
     .conteudo h1{ font-size: var(--grande_cell);}
     .conteudo p{ font-size: var(--pequena_cell);}
     .capitular{ font-size: 1.5em;}
+    .rodade button svg{height: 2em; width: 2em;}
 }
 @media screen and (min-width: 801px) {
     .conteudo h1{ font-size: var(--grande_pc);}
